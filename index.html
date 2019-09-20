@@ -30,60 +30,52 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
 
-      <!-- <section>
-        <h2>Первая причина</h2>
-        <p>Настоящий городок</p>
-        <p>-№1-</p>
-        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <div></div>                        В css задам нужный размер и вставлю картинку
-      </section>
-
       <section>
-        <h2>Полезные советы для туриста</h2>
+        <h2 class="visually-hidden">Список причин</h2>
         <ul>
           <li>
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <h3>Настоящий городок</h3>
+            <p>-№1-</p>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="img/foto-1.jpg" width="800px" height="401px" alt="Фото городского пейзажа Седоны">
+            <ul>
+              <li>
+                <h4>Жильё</h4>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li>
+                <h4>Еда</h4>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li>
+                <h4>Сувениры</h4>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </li>
           <li>
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <h3>Там есть мост Дьявола</h3>
+            <p>-№2-</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <img src="img/foto-2.jpg" width="800px" height="400px" alt="Фото моста Дьявола в Седоне">
           </li>
           <li>
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <h3>Небольшая площадь</h3>
+            <p>-№3-</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <p>-№4-</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <p>-№5-</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
-
-      <section>
-        <h2>Вторая причина</h2>
-        <div></div>                     В css задам нужный размер и вставлю картинку. Так как это не контекстное изображение, картинку вставляем через стили
-        <p>Там есть мост Дьявола</p>
-        <p>-№2-</p>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-      </section>
-
-      <section>
-        <h2>Третья причина</h2>
-        <p>Небольшая площадь</p>
-        <p>-№3-</p>
-        <p>Все достопримечательности находятся очень близко</p>
-      </section>
-
-      <section>
-        <h2>Четвёртая причина</h2>
-        <p>Красивая дорога</p>
-        <p>-№4-</p>
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </section>
-
-      <section>
-        <h2>Пятая причина</h2>
-        <p>Мало туристов</p>
-        <p>-№5-</p>
-        <p>Большинство едет в гранд каньон и толпится там</p>
-      </section> -->
 
       <section>
         <h2 class="visually-hidden">Где остановиться в Седоне</h2>
@@ -93,22 +85,36 @@
           <button type="button">Поиск гостиницы в Седоне</button>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <label for="date-arrival">Дата заезда:</label>
-              <input type="text" name="arrival" id="date-arrival" value="" placeholder="24 апреля 2017">
+              <label>
+                Дата заезда:
+                <input type="text" name="arrival" value="" placeholder="24 апреля 2017">
+              </label>
             </p>
             <p>
-              <label for="date-departure">Дата выезда:</label>
-              <input type="text" name="departure" id="date-departure" value="" placeholder="4 июля 2017">
+              <label>
+                Дата выезда:
+                <input type="text" name="departure" value="" placeholder="4 июля 2017">
+            </label>
             </p>
             <p>
               <label for="number-adult">Взрослые</label>
+              <button type="button" aria-label="Минус">-</button>
               <input type="number" min="0" value="2" name="adult" id="number-adult">
+              <button type="button" aria-label="Плюс">+</button>
+              
               <label for="number-children">Дети</label>
+              <button type="button" aria-label="минус">-</button>
               <input type="number" min="0" value="0" name="children" id="number-children">
+              <button type="button" aria-label="Плюс">+</button>
             </p>
             <button type="submit">Найти</button>
           </form>
         </div>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Как добраться до Седоны. Карта.</h2>
+        <img src="img/map.png" width="1200px" height="594px" alt="Карта окрестностей Седоны">
       </section>
     </main>
 
