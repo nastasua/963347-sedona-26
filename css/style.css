@@ -54,6 +54,7 @@ a {
     background-image: url("../img/background-photo.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .title-info {
@@ -66,6 +67,39 @@ a {
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
+}
+
+.benefits-list,
+.features-list {
+    list-style: none;
+}
+
+.item-box {
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+.benefits-item h3,
+.features-item h4 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.item-box p,
+.features-item p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.benefits-item,
+.features-item  {
+    color: #333333;
+}
+
+.benefits-box {
+    background-color: #eeeeee;
 }
 
 .modal-subtitle {
@@ -153,6 +187,84 @@ input::placeholder {
 .btn-submit:focus {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
+}
+
+.item-current {
+    color: #766357;
+}
+
+.filters {
+    background-color: #40749c;
+    background-image: url("../img/filter-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter-input:disabled + label {
+    color: #6a6a6a;
+}
+
+.filter h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.filter button {
+    font: inherit;
+
+    background: transparent;
+    border: 2px solid #ffffff;
+}
+
+.filter-results p {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.filter-results h3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.filter-type {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.filter-type:hover,
+.filter-type:active,
+.filter-active {
+    color: #81b3d2;
+    border: none;
+}
+
+.filter-type:focus {
+    color: #000000;
+    border: none;
 }
 
 .catalog ul {
