@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+
+    /* Для сетки */
+    opacity: 0.7;
 }
 
 .page {
@@ -52,10 +55,16 @@ a {
 
     background-color: #385265;
     background-image: url("../img/background-photo.jpg");
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* .section-caption::after {
+    content: url("../img/intro-mask.svg");
+    position: absolute;
+    align-self: flex-end;
+} */
 
 .title-info {
     font-size: 21px;
@@ -140,6 +149,10 @@ a {
 .btn-search:focus {
     color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
+}
+
+.modal-form {
+    background-color: #ffffff;
 }
 
 .modal-search label {
@@ -331,3 +344,322 @@ input::placeholder {
 .footer-copyright a {
     color: #000000;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+                                             /* Сеточные стили */
+
+html, body {
+    min-width: 1280px;
+    min-height: 2762px;
+}
+
+/* html { 
+    box-sizing: border-box; 
+}
+
+*, *::before, *::after { 
+    box-sizing: inherit; 
+} */
+                                /* временнo для сетки */
+body {
+    background-color: #6a6a6a;
+    /* background-image: url("../img/sedona-index.jpg"); */
+    background-size: 1280px auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.page {
+    min-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    /* Временно для сетки */
+    min-height: 56px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    position: absolute; 
+}
+
+.logo img {
+    margin-left: 52px;
+    margin-right: 52px;
+}
+
+.site-navigation {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    min-width: 1200px;
+}
+
+.site-navigation li {
+    margin: 15px;
+}
+
+.site-navigation li:nth-child(1) {
+    margin-left: 72px;
+    margin-right: 74px;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-left: 73px;
+    margin-right: 72px;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-left: auto;
+    margin-right: 77px;
+}
+
+.site-navigation li:nth-child(4) {
+    margin-left: 88px;
+    margin-right: 72px;
+}
+
+.section-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 508px;
+}
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 489px;
+    margin-left: 355px;
+    margin-right: 355px;
+    margin-bottom: 51px;
+}
+
+.title-info {
+    text-align: center;
+    margin-top: 61px;
+    margin-bottom: 27px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+}
+
+.info {
+    padding: 0;
+    margin: 0;
+}
+
+.benefits {
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    
+    min-height: 256px;
+}
+
+.item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.item-box {
+    text-align: center;
+    width: 281px;
+    padding: 46px 60px;
+    margin: 0;
+}
+
+.item-box h3 {
+    margin: 0;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.item-box p {
+    margin-top: 22px;
+}
+
+.benefits-img {
+    box-sizing: border-box;
+}
+
+.features {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.features-item {
+    display: flex;
+
+    margin-top: 133px;
+    margin-bottom: 63px;
+}
+
+.list-item {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-bridge {
+    flex-direction: row-reverse;
+}
+
+.item-bridge {
+    justify-content: flex-end;
+}
+
+.item-bridge{
+    text-align: center;
+    width: 303px;
+    padding-right: 49px;
+    padding-left: 48px;
+    margin: 0;
+}
+
+.item-bridge h3 {
+    margin: 0;
+    margin-left: 76px;
+    margin-right: 76px;
+}
+
+.item-box p {
+    margin-top: 22px;
+}
+
+.benefits-img {
+    box-sizing: border-box;
+}
+
+.benefits-box .benefits-item {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    
+    min-height: 142px;
+}
+
+.benefits-box h3 {
+    padding: 0;
+    margin: 0 auto;
+    width: 117px;
+}
+
+.benefits-box p {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-subtitle {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.modal-text {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 23px;
+    margin-bottom: 47px;
+}
+
+.modal-search {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-search {
+    margin: 0;
+    padding: 30px 140px;
+}
+
+.modal-form {
+    position: absolute;
+    width: 468px;
+    height: 295px;
+    margin: 0;
+    padding: 50px;
+}
+
+.btn-submit {
+    margin: 0;
+    padding: 17px 196px;
+    padding-bottom: 22px;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 120px;
+    margin-top: -120px;
+}
+
+.hashtag {
+    margin: 0;
+}
+
+.footer-social {
+    width: 150px;
+}
+
+.footer-copyright {
+    width: 150px;
+    margin: 0;
+}
+
+

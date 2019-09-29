@@ -12,7 +12,7 @@
       <header class="header">
         <nav class="navigation">
           <a href="index.html" class="logo">
-            <img src="img/logo-sedona.svg" width="140px" height="72px" alt="Логотип Sity of Sedona" >
+            <img src="img/logo-sedona.svg" width="139px" height="71px" alt="Логотип Sity of Sedona" >
           </a>
           <ul class="site-navigation">
             <li><a href="">Информация</a></li>
@@ -38,50 +38,66 @@
           <h2 class="visually-hidden">Список причин</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
-              <div class="item-box">
-                <h3>Настоящий городок</h3>
-                <p>-№1-</p>
-                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="item">
+                <div class="item-box">
+                  <h3>Настоящий городок</h3>
+                  <p>-№1-</p>
+                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img src="img/foto-1.jpg" class="benefits-img" width="800px" height="256" alt="Фото городского пейзажа Седоны">
               </div>
-              <img src="img/foto-1.jpg" class="benefits-img" width="800px" height="401px" alt="Фото городского пейзажа Седоны">
-              <ul class="features-list">
-                <li class="features-item">
-                  <h4>Жильё</h4>
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </li>
-                <li class="features-item">
-                  <h4>Еда</h4>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="features-item">
-                  <h4>Сувениры</h4>
-                  <p>Не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
+              <div class="features">
+                <ul class="features-list">
+                  <li class="features-item">
+                    <div class="list-item">
+                      <h4>Жильё</h4>
+                      <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    </div>
+                  </li>
+                  <li class="features-item">
+                    <div class="list-item">
+                      <h4>Еда</h4>
+                      <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </div>
+                  </li>
+                  <li class="features-item">
+                    <div class="list-item">
+                      <h4>Сувениры</h4>
+                      <p>Не только китайского, но и местного производства!</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="benefits-item">
-              <div class="item-box">
-                <h3>Там есть мост Дьявола</h3>
+            <li class="benefits-item benefits-bridge">
+              <div class="item-box item-bridge">
+                <h3>Там есть<br>мост Дьявола</h3>
                 <p>-№2-</p>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
-              <img src="img/foto-2.jpg" class="benefits-img" width="800px" height="400px" alt="Фото моста Дьявола в Седоне">
+              <img src="img/foto-2.jpg" class="benefits-img" width="800px" height="256px" alt="Фото моста Дьявола в Седоне">
             </li>
-            <div class="benefits-box">
+            <div class="features benefits-box">
               <li class="benefits-item">
-                <h3>Небольшая площадь</h3>
-                <p>-№3-</p>
-                <p>Все достопримечательности находятся очень близко</p>
+                <div class="list-item">
+                  <h3>Небольшая площадь</h3>
+                  <p>-№3-</p>
+                  <p>Все достопримечательности находятся очень близко</p>
+                </div> 
               </li>
               <li class="benefits-item">
-                <h3>Красивая дорога</h3>
-                <p>-№4-</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <div class="list-item">
+                  <h3>Красивая дорога</h3>
+                  <p>-№4-</p>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
               </li>
               <li class="benefits-item">
-                <h3>Мало туристов</h3>
-                <p>-№5-</p>
-                <p>Большинство едет в гранд каньон и толпится там</p>
+                <div class="list-item">
+                  <h3>Мало туристов</h3>
+                  <p>-№5-</p>
+                  <p>Большинство едет в гранд каньон и толпится там</p>
+                </div>
               </li>
             </div>
           </ul>
@@ -90,10 +106,10 @@
         <section class="modal">
           <h2 class="visually-hidden">Где остановиться в Седоне</h2>
           <p class="modal-subtitle">Заинтересовались?</p>
-          <p class="modal-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="modal-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <div class="modal-search">
             <button type="button" class="button btn-search">Поиск гостиницы в Седоне</button>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
               <label>
                 <p class="date">Дата заезда:</p>
                 <input class="forms date-form" type="text" name="arrival" value="" placeholder="24 апреля 2017">
@@ -126,7 +142,7 @@
 
       <footer class="main-footer">
         <p class="hashtag">#visitsedona</p>
-        <ul>
+        <ul class="footer-social">
           <li class="social-button"><a href="">Твиттер</a></li>
           <li class="social-button"><a href="">Фейсбук</a></li>
           <li class="social-button"><a href="">Ютуб</a></li>
