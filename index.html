@@ -114,33 +114,33 @@
           <p class="modal-subtitle">Заинтересовались?</p>
           <p class="modal-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <div class="modal-search">
-            <button type="button" class="button btn-search">Поиск гостиницы в Седоне</button>
+            <button type="button" class="button btn-search btn-modal">Поиск гостиницы в Седоне</button>
             <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
               <label>
                 Дата заезда:
-                <input class="forms date-form" type="text" name="arrival" value="" placeholder="24 апреля 2017">
-                <div class="icon-form"></div>
+                <input class="forms date-form" type="text" name="arrival" value="" placeholder="24 апреля 2017" autocomplete="off" required>
               </label>
+              <button class="icon-form" type="button"></button>
               <label>
                 Дата выезда:
-                <input class="forms date-form" type="text" name="departure" value="" placeholder="4 июля 2017">
-                <div class="icon-form"></div>
+                <input class="forms date-form" type="text" name="departure" value="" placeholder="4 июля 2017" autocomplete="off" required>
               </label>
+              <button class="icon-form icon-form-departure" type="button"></button>
               <div class="form-number">
                 <div class="form-number-box">
                   <label for="number-adult">Взрослые:</label>
                   <div class="number-box">
-                    <button class="btn" type="button" aria-label="Минус"></button>
-                    <input class="forms number-form" type="text" value="" name="adult" id="number-adult" placeholder="2">
-                    <button class="btn btn-large" type="button" aria-label="Плюс"></button>
+                    <button class="btn btn-min-adult" type="button" aria-label="Минус"></button>
+                    <input class="forms number-form form-adult" type="text" value="" name="adult" id="number-adult" placeholder="2" autocomplete="off" required>
+                    <button class="btn btn-large btn-max-adult" type="button" aria-label="Плюс"></button>
                   </div>
                 </div>
                 <div class="form-number-box">
                   <label class="number-child" for="number-children">Дети:</label>
                   <div class="number-box">
-                    <button class="btn" type="button" aria-label="минус"></button>
-                    <input class="forms number-form" type="text" value="" name="children" id="number-children" placeholder="0">
-                    <button class="btn btn-large" type="button" aria-label="Плюс"></button>
+                    <button class="btn btn-min-children" type="button" aria-label="минус"></button>
+                    <input class="forms number-form form-children" type="text" value="" name="children" id="number-children" placeholder="0" autocomplete="off" required>
+                    <button class="btn btn-large btn-max-children" type="button" aria-label="Плюс"></button>
                   </div>
                 </div>
               </div>
@@ -191,6 +191,9 @@
         </div>
       </footer>  
     </div>
+  
+    <script src="js/popup.js"></script>
+
   </body>
 </html>
 
