@@ -29,6 +29,7 @@ a {
 
 .logo img {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -114,6 +115,7 @@ a {
 }
 
 .section-caption {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +132,17 @@ a {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section-caption img {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left:50%;
+  right:50%;
+  -webkit-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
 }
 
 .section-info {
@@ -150,7 +163,7 @@ a {
 .title-info {
   text-align: center;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   padding: 0;
 
   font-size: 21px;
@@ -237,7 +250,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 33%;  
+  width: 360px;  
   margin: 0;
   padding: 20px;
   padding-top: 49px;
@@ -318,7 +331,6 @@ a {
 }
 
 .features-item {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +351,7 @@ a {
           flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -350,13 +362,25 @@ a {
   margin: 0;
 }
 
-.item-benefits h4::before {
+.item-benefits {
+  position: relative;
+
+  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.item-benefits::before {
   content: " ";
 
   position: absolute;
-  top: 60px;
+  bottom: 50px;
   left: 50%;
   margin-left: -37px;
+}
+
+.icon-1::before {
   width: 75px;
   height: 72px;
 
@@ -364,13 +388,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.item--benefits h4::before {
-  content: " ";
-
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  margin-left: -37px;
+.icon-2::before {
   width: 74px;
   height: 70px;
 
@@ -378,24 +396,13 @@ a {
   background-repeat: no-repeat;
 }
 
-.item---benefits h4::before {
-  content: " ";
-
-  position: absolute;
-  top: 55px;
-  left: 50%;
+.icon-3::before {
   margin-left: -31px;
   width: 64px;
   height: 76px;
 
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
-}
-
-.list-item h4 {
-  margin: 0;
-  margin-bottom: 25px;
-  padding: 0;
 }
 
 .list-item p {
@@ -464,6 +471,10 @@ a {
 .modal-form {
   position: absolute;
   top: 85px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +524,7 @@ a {
 }
 
 .btn-search {
-  width: 100%;
+  width: auto;
   margin: 0;
   padding-top: 31px;
   padding-right: 5px;
@@ -536,6 +547,10 @@ a {
 
 .btn-search:focus {
   outline: none;
+}
+
+.btn-modal {
+  width: 100%;
 }
 
 .button {
@@ -960,6 +975,7 @@ input::placeholder {
 
 .price-controls .max-price {
   margin-right: 30px;
+  margin-left: auto;
 }
 
 .price-controls input {
@@ -1367,7 +1383,7 @@ input::placeholder {
           justify-content: space-between;
   width: 150px;
   margin: 0;
-  margin-left: 31px;
+  margin-left: 29px;
   padding: 0;
 
   list-style: none;
@@ -1459,5 +1475,4 @@ input::placeholder {
 }
 
  
-
 
