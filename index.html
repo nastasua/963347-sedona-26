@@ -8,8 +8,8 @@
     <link href="css/style-min.css" rel="stylesheet"> 
   </head>
   <body>
-    <div class="page">
-      <header class="header">
+    <div class="container-page">
+      <header class="header page">
         <nav class="navigation">
           <a href="index.html" class="logo">
             <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Sity of Sedona" >
@@ -31,10 +31,10 @@
         </nav>
       </header>
 
-      <main class="container">
+      <main class="container page">
         <section class="section-caption">
           <h1 class="visually-hidden">Sedona</h1>
-          <img src="img/intro-welcome.svg" class="caption-img" width="459" height="353" alt="Welcome to the gorgeous Sedona because the grand canyon sucks!">
+          <img src="img/section-caption-welcome.svg" class="caption-img" width="459" height="353" alt="Welcome to the gorgeous Sedona because the grand canyon sucks!">
         </section>
 
         <section class="section-info">
@@ -48,11 +48,11 @@
             <li class="benefits-item item-features">
               <div class="item benefits-size">
                 <div class="item-box">
-                  <h3>Настоящий<br>городок</h3>
+                  <h3>Настоящий городок</h3>
                   <p class="tiny">№1</p>
                   <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img src="img/foto-1.jpg" class="benefits-img" width="800" height="256" alt="Фото городского пейзажа Седоны">
+                <img src="img/item-box-foto.jpg" class="benefits-img" width="800" height="256" alt="Фото городского пейзажа Седоны">
               </div>
               <div class="features">
                 <ul class="features-list benefits-size">
@@ -83,27 +83,27 @@
                 <p class="tiny">№2</p>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
-              <img src="img/foto-2.jpg" class="benefits-img" width="800" height="256" alt="Фото моста Дьявола в Седоне">
+              <img src="img/item-bridge-foto.jpg" class="benefits-img" width="800" height="256" alt="Фото моста Дьявола в Седоне">
             </li>
             <li class="benefits-item item-row">
               <div class="list-item">
-                <h3>Небольшая<br>площадь</h3>
+                <h3>Небольшая площадь</h3>
                 <p class="tiny">№3</p>
-                <p>Все достопримечательности находятся очень близко</p>
+                <p class="text-row">Все достопримечательности находятся очень близко</p>
               </div> 
             </li>
             <li class="benefits-item item-row">
               <div class="list-item">
-                <h3>Красивая<br>дорога</h3>
+                <h3>Красивая дорога</h3>
                 <p class="tiny">№4</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="text-row">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="benefits-item item-row">
               <div class="list-item">
-                <h3>Мало<br>туристов</h3>
+                <h3>Мало туристов</h3>
                 <p class="tiny">№5</p>
-                <p class="text-5">Большинство едет в гранд каньон и толпится там</p>
+                <p class="text-row-5">Большинство едет в гранд каньон и толпится там</p>
               </div>
             </li>
           </ul>
@@ -115,7 +115,7 @@
           <p class="modal-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <div class="modal-search">
             <button type="button" class="button btn-search btn-modal">Поиск гостиницы в Седоне</button>
-            <form class="modal-form modal-hide" action="https://echo.htmlacademy.ru" method="post">
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
               <label>
                 Дата заезда:
                 <input class="forms date-form" type="text" name="arrival" value="" placeholder="24 апреля 2017" autocomplete="off" required>
@@ -155,7 +155,7 @@
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer page">
         <div class="footer-container">
           <p class="hashtag">#visitsedona</p>
           <ul class="footer-social">
@@ -180,7 +180,7 @@
           </ul>
           <div class="footer-copyright">
             <p>Website by</p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="icon-logo">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="icon-logo" tabindex="0">
               <span class="visually-hidden">HTML Academy</span>
               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
                 <title>logo-htmlacademy-small1</title>
